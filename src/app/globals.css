@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #090711;
+  color: #f7f2ff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button, input { font: inherit; }
+.neon-card {
+  background: linear-gradient(145deg, rgba(33,20,48,.96), rgba(17,13,29,.96));
+  border: 1px solid rgba(216,70,239,.25);
+  box-shadow: 0 0 35px rgba(168,85,247,.08);
+}
+.neon-text { text-shadow: 0 0 24px rgba(232,121,249,.55); }
+.neon-button {
+  background: linear-gradient(100deg, #a21caf, #e11d48);
+  box-shadow: 0 0 24px rgba(217,70,239,.24);
+  transition: transform .18s ease, filter .18s ease;
+}
+.neon-button:hover { transform: translateY(-2px); filter: brightness(1.12); }
+.field {
+  width: 100%; border-radius: 12px; border: 1px solid #493451;
+  background: #100c19; padding: 13px 14px; color: white; outline: none;
+}
+.field:focus { border-color: #d946ef; box-shadow: 0 0 0 3px rgba(217,70,239,.12); }
